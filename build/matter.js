@@ -2965,7 +2965,7 @@ var Bounds = _dereq_('../geometry/Bounds');
         for (i = 0; i < pairs.length; i++) {
             pair = pairs[i];
             
-            if (!pair.isActive)
+            if (!pair.isActive || pair.isSensor)
                 continue;
             
             activeCount = pair.activeContacts.length;
